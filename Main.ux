@@ -4,6 +4,10 @@
     <StatusBarBackground Dock="Top" />
     <Panel>
     <ScrollView SnapMinTransform="false">
+      <!-- Scroll Bottom Trigger -->
+      <WhileScrollable ScrollDirections="Down" Invert="true">
+        <Callback Handler="{loadMore}" />
+      </WhileScrollable>
       <DockPanel>
       <CogWheelReload Dock="Top" />
       <StackPanel>
@@ -16,6 +20,7 @@
           </DockPanel>
         </Each>
       </StackPanel>
+      <!--<CogWheelReload Dock="Top" />-->
       </DockPanel>
     </ScrollView>
     </Panel>

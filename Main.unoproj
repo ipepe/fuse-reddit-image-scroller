@@ -1,7 +1,21 @@
 {
+  "BuildDirectory": ".build",
+  "CacheDirectory": ".cache",
+  "Version": "1.0.0",
+  "VersionCount": 1,
+  "Title": "Reddit Image Scroller",
+  "Copyright": "Copyright Patryk Ptasiński(C) 2016",
+  "Publisher": "Patryk Ptasiński",
+  "Mobile": {
+    "KeepAlive": true,
+    "ShowStatusbar": true,
+    "RunsInBackground": true,
+    "Orientations": "Portrait"
+  },
   "Packages": [
     "Fuse",
-    "FuseJS"
+    "FuseJS",
+    "Fuse.LocalNotifications"
   ],
   "Includes": [
     "CogWheelReload.ux:UXFile",
