@@ -1,0 +1,24 @@
+<App>
+  <DockPanel>
+    <JavaScript File="Main.js"/>
+    <StatusBarBackground Dock="Top" />
+    <Panel>
+    <ScrollView SnapMinTransform="false">
+      <DockPanel>
+      <CogWheelReload Dock="Top" />
+      <StackPanel>
+        <Each Items="{items}">
+          <DockPanel Padding="10" Margin="0,1" Background="#fff" Clicked="{onPostClicked}">
+            <StackPanel>
+              <Text Value="{title}" FontSize="20" TextWrapping="Wrap"/>
+              <Image Url="{image_url}" StretchMode="UniformToFill" />
+            </StackPanel>
+          </DockPanel>
+        </Each>
+      </StackPanel>
+      </DockPanel>
+    </ScrollView>
+    </Panel>
+    <BottomBarBackground Dock="Bottom" />
+  </DockPanel>
+</App>

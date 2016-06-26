@@ -4,6 +4,7 @@
     "FuseJS"
   ],
   "Includes": [
-    "AnimatedList.ux:UXFile"
+    "CogWheelReload.ux:UXFile",
+    "Main.ux:UXFile"
   ]
 }
