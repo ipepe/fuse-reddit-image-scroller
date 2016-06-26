@@ -1,0 +1,16 @@
+<App Background="#eee">
+  <DockPanel>
+    <JavaScript File="AnimatedList.js"/>
+    <StatusBarBackground Dock="Top"/>
+    <ScrollView>
+      <StackPanel>
+        <Each Items="{items}">
+          <DockPanel Padding="10" Margin="0,1" Background="#fff" Clicked="{onPostClicked}">
+            <Text Value="{title}"/>
+            <Image Url="{image_url}" StretchMode="UniformToFill" />
+          </DockPanel>
+        </Each>
+      </StackPanel>
+    </ScrollView>
+  </DockPanel>
+</App>
